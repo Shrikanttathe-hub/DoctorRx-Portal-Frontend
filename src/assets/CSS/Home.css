@@ -1,0 +1,49 @@
+.homeSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 120px 20px;
+    gap: 20px;
+    background: url('../Images/home.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homeSection h1 {
+    font-size: 45px;
+    color: black;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.homeSection .buttonSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.homeSection .buttonSection button {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    border: none;
+}
+
+.homeSection .buttonSection button:hover {
+    cursor: pointer;
+    background-color: lightcyan;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+
+.homeSection p {
+    text-align: center;
+    width: 60%;
+    font-size: 20px;
+    line-height: 30px;
+}

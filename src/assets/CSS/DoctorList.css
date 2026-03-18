@@ -1,0 +1,352 @@
+.doctorList {
+  width: 100%;
+  height: auto;
+  padding: 120px 20px 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doctorList .mainSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.doctorList h1 {
+  color: green;
+}
+
+.doctorList .gridCards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+}
+
+.doctorList .gridCards .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px 10px 20px 10px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.doctorList .gridCards .cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.doctorList .gridCards .doctorImg {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.doctorList .gridCards .doctorImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.doctorList .gridCards .cards h2 {
+  font-weight: 600;
+}
+
+.doctorList .gridCards .cards h2,
+.doctorList .gridCards .cards p {
+  width: 100%;
+  font-size: 18px;
+}
+
+.doctorList .gridCards .cards p {
+  font-size: 18px;
+  color: grey;
+  padding-bottom: 5px;
+}
+
+.doctorList .gridCards .cards .button {
+  width: 100%;
+}
+
+.doctorList .gridCards .cards .button button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border: 1px solid green;
+  background-color: rgba(0, 128, 0, 0.344);
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.doctorList .gridCards .cards .button button:hover {
+  border: 1px solid rgba(0, 128, 0, 0.344);
+  background-color: green;
+  cursor: pointer;
+}
+
+/*Pop up Css */
+.popUpEdit {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  backdrop-filter: blur(10px);
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow-y: auto;
+  inset: 0;
+  padding: 120px 20px;
+  background-color: rgb(255, 255, 255, 0.1);
+}
+
+.popUpEdit .modal {
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  width: 50%;
+  padding: 20px;
+  background-color: #fff;
+  animation: fadeUp 0.5s ease;
+  margin: auto;
+  border-top: 2px solid green;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.popUpEdit .modal button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.popUpEdit .modal h2 {
+  text-align: center;
+  color: #000;
+}
+
+.popUpEdit .modal p {
+  text-align: center;
+  font-size: 18px;
+  color: green;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.popUpEdit .modal .nameSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+}
+
+.popUpEdit .modal .nameSection:nth-last-child(1) {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.popUpEdit .modal .nameSection .inputBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  position: relative;
+}
+
+.popUpEdit .modal .nameSection .inputBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(10%, -50%);
+  padding: 0px 8px;
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.popUpEdit .modal .nameSection .inputBox input,
+.popUpEdit .modal .nameSection .inputBox textarea {
+  padding: 20px 20px;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: transparent;
+  color: grey;
+  font-size: 18px;
+}
+
+.popUpEdit .modal .nameSection .inputBox textarea {
+  min-height: 150px;
+}
+
+.popUpEdit .modal .saveChanges {
+  position: relative;
+  color: #fff;
+  background-color: #1971c9;
+  border: none;
+  font-weight: 700;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.step2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.step2 h3 {
+  width: 100%;
+  text-align: start;
+  padding: 10px 0px;
+  font-size: 20px;
+}
+
+.nameSectionPayment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nameSectionPayment .inputBox:first-child {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid grey;
+  padding: 10px;
+}
+
+.qrsection {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-right: 1px solid grey;
+}
+
+.nameSectionPayment .qrsection p {
+  color: black;
+  font-size: 18px;
+}
+
+.nameSectionPayment .qrsection .qrImag img {
+  width: 100%;
+}
+
+.nameSectionPayment .paymentDetails {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  padding: 10px;
+  text-align: start;
+}
+
+.nameSectionPayment .paymentDetails p {
+  color: grey;
+  padding: 10px 0px;
+}
+
+.nameSectionPayment .paymentDetails p strong {
+  color: black;
+  font-weight: 700;
+  font-size: 25px;
+  padding: 10px 0px;
+}
+
+.nameSectionPayment .paymentDetails .afterPayment {
+  color: black;
+}
+
+.nameSectionPayment .paymentDetails .trasactionId {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nameSectionPayment .paymentDetails .trasactionId label {
+  color: grey;
+  font-size: 20px;
+}
+
+.nameSectionPayment .paymentDetails .trasactionId input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #e0e0e0;
+}
+
+.nameSectionPayment .inputBox:nth-child(2) {
+  padding: 10px;
+}
+
+.nameSectionPayment .inputBox:nth-child(2) p {
+  text-align: start;
+  color: grey;
+  font-size: 18px;
+}
+
+.nameSectionPayment .inputBox:nth-child(2) label {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.conserdationFrom .paymentSubmit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.conserdationFrom .paymentSubmit .saveChanges {
+  background-color: green;
+  padding: 15px 30px;
+  border-radius: 30px;
+}

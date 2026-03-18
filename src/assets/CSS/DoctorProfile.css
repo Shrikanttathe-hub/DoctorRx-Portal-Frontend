@@ -1,0 +1,100 @@
+.profileSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh + 50px);
+  min-height: 100vh;
+}
+
+.profileSection .profileContent {
+  box-shadow: 0px 0px 20px 10px rgba(0 0 0 / 40%);
+  width: 90%;
+  padding: 50px;
+  justify-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profileSection .profileContent .profilePicture {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profileSection .profileContent .profilePicture p {
+  padding: 10px 0px;
+}
+
+.profileSection .profileContent .profilePicture .profileImg {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileSection .profileContent .profilePicture .profileImg img {
+  width: 100%;
+}
+
+.profileSection .profileContent .profileDetails {
+  width: 70%;
+}
+
+.profileSection .profileContent h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  border-bottom: 1px solid green;
+  font-size: 35px;
+}
+
+.profileSection .profileContent .profileDetails .aboutMe {
+  padding: 10px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profileSection .profileContent .profileDetails .aboutMe label {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.profileSection .profileContent .profileDetails .aboutMe p {
+  width: 100%;
+  min-height: 70px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-align: start;
+}
+
+.profileSection .profileContent .profileDetails button {
+  padding: 10px 20px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #1971c9;
+  color: #fff;
+  font-weight: 500;
+}
+
+.profileSection .profileContent p {
+  padding: 10px 0px;
+  border-bottom: 1px solid green;
+  text-align: start;
+  font-size: 20px;
+}
+
+.profileSection .profileContent p strong {
+  padding: 0px 10px 0px 0px;
+}
