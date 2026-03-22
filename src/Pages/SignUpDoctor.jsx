@@ -115,7 +115,7 @@ const SignUpDoctor = () => {
               {error.phoneNumber && <p className="signUpError">{error.phoneNumber}</p>}
               <input placeholder='Years of Experience' type='number' step="0.1" value={signUpdata.yearsOfExp} onChange={(e) => { setSignUpData({ ...signUpdata, yearsOfExp: e.target.value }); setError({ ...error, yearsOfExp: '' }); }} />
               {error.yearsOfExp && <p className="signUpError">{error.yearsOfExp}</p>}
-              <input placeholder='Password' type='password' required minLength={5} maxLength={10} value={signUpdata.password} onChange={(e) => { setSignUpData({ ...signUpdata, password: e.target.value }); setError({ ...error, password: '' }); }} />
+              <input placeholder='Password' type='password' required minLength={5} value={signUpdata.password} onChange={(e) => { setSignUpData({ ...signUpdata, password: e.target.value }); setError({ ...error, password: '' }); }} />
               {error.password && <p className="signUpError">{error.password}</p>}
               <input placeholder='Confirm Password' type='password' value={signUpdata.confirmPassword} onChange={(e) => { setSignUpData({ ...signUpdata, confirmPassword: e.target.value }); setError({ ...error, confirmPassword: '' }); }} />
               {error.confirmPassword && <p className="signUpError">{error.confirmPassword}</p>}

@@ -121,7 +121,7 @@ const SignUpPatient = () => {
               {error.sergery && <p className="signUpError">{error.sergery}</p>}
               <input placeholder='History of illness' value={signUpdata.illness} onChange={(e) => { setSignUpData({ ...signUpdata, illness: e.target.value }); setError({ ...error, illness: '' }); }} />
               {error.illness && <p className="signUpError">{error.illness}</p>}
-              <input placeholder='Password' type='password' minLength={5} maxLength={10} required value={signUpdata.password} onChange={(e) => { setSignUpData({ ...signUpdata, password: e.target.value }); setError({ ...error, password: '' }); }} />
+              <input placeholder='Password' type='password' minLength={5} required value={signUpdata.password} onChange={(e) => { setSignUpData({ ...signUpdata, password: e.target.value }); setError({ ...error, password: '' }); }} />
               {error.password && <p className="signUpError">{error.password}</p>}
               <input placeholder='Confirm Password' type='password' value={signUpdata.confirmPassword} onChange={(e) => { setSignUpData({ ...signUpdata, confirmPassword: e.target.value }); setError({ ...error, confirmPassword: '' }); }} />
               {error.confirmPassword && <p className="signUpError">{error.confirmPassword}</p>}
